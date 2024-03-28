@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>
+        Hello Computer Science student! I'm here to help determine a good career for you. Given the choice,
+        would you rather work on web applications, or mobile applications?
+        
+        <reply>
+            <text>Web Applications</text>
+            <postback>web applications</postback>
+        </reply>
+        <reply>
+            <text>Mobile Applications</text>
+            <postback>mobile applications</postback>
+        </reply>
+    </template>
+  </category>
+  
+  <!--WEB PATH-->
+  <category>
+    <pattern>web applications</pattern>
+    <template>
+        Great! You'd rather work on web applications. Here's another question for you:
+        Do you prefer working on how a web app looks in a language like Javascript (Front-End), or would you
+        rather be working on how a website handles web requests and other logic in a language like 
+        Java (Back-End)?
+        
+        <reply>
+            <text>Front-End</text>
+            <postback>front end</postback>
+        </reply>
+        <reply>
+            <text>Back-End</text>
+            <postback>back end</postback>
+        </reply>
+        <reply>
+            <text>I like both the same!</text>
+            <postback>full stack</postback>
+        </reply>
+    </template>
+  </category>
+  
+  <!--OPTIONS-->
+  <category>
+      <pattern>front end</pattern>
+      <template>
+          Great news! I've found the perfect job for you: Front-End Web Developer. Here's a link to a description for the job!
+          Feel free to enter any character if you'd like to try other options.
+          <button>
+              <text>Front-End Developer Job Description</text>
+              <url>https://www.indeed.com/hire/job-description/front-end-developer</url>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>back end</pattern>
+      <template>
+          Great news! I've found the perfect job for you: Back-End Web Developer. Here's a link to a description for the job!
+          Feel free to enter any character if you'd like to try other options.
+          <button>
+              <text>Back-End Developer Job Description</text>
+              <url>https://in.indeed.com/career-advice/resumes-cover-letters/backend-developer-job-description</url>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>full stack</pattern>
+      <template>
+          Great news! I've found the perfect job for you: Full-stack Web Developer. Here's a link to a description for the job!
+          Feel free to enter any character if you'd like to try other options.
+          <button>
+              <text>Full-Stack Developer Job Description</text>
+              <url>https://www.indeed.com/hire/job-description/full-stack-developer</url>
+          </button>
+      </template>
+  </category>
+  
+  <!--MOBILE PATH-->
+  <category>
+    <pattern>mobile applications</pattern>
+    <template>
+        Great! You'd rather work on mobile applications. Here's another question for you:
+        Would you rather develope applications for Apple iOS devices in a language like Swift or Objective-C, or applications
+        for Android devices in a language like Java or Kotlin?
+        
+        <reply>
+            <text>iOS</text>
+            <postback>ios</postback>
+        </reply>
+        <reply>
+            <text>Android</text>
+            <postback>android</postback>
+        </reply>
+    </template>
+  </category>
+  
+  <!--OPTIONS-->
+  <category>
+      <pattern>ios</pattern>
+      <template>
+          Great news! I've found the perfect job for you: iOS Developer. Here's a link to a description for the job!
+          Feel free to enter any character if you'd like to try other options.
+          <button>
+              <text>iOS Developer Job Description</text>
+              <url>https://www.indeed.com/career/ios-developer</url>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>android</pattern>
+      <template>
+          Great news! I've found the perfect job for you: Android Developer. Here's a link to a description for the job!
+          Feel free to enter any character if you'd like to try other options.
+          <button>
+              <text>Android Developer Job Description</text>
+              <url>https://www.indeed.com/career/android-developer</url>
+          </button>
+      </template>
+  </category>
+</aiml>
